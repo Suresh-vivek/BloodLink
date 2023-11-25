@@ -7,7 +7,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactUs from "./Components/ContactUs";
 import Donation from "./Components/Donation";
 import Community from "./Components/Community";
-import Login from "./Components/Login";
+import Signup from "./Components/Signup";
+import Request from "./Components/Request";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -20,7 +22,8 @@ root.render(
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/donation" element={<Donation />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/request" element={<Request />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

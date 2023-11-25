@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <div className="outer-nav">
       <div className="nav-left">
+        <Link to="/">
         <img src={require("../Assets/logo.png")} className="nav-image" />
+        </Link>
         <span>Linking Lifesavers with Life Seekers</span>
       </div>
 
@@ -15,6 +17,13 @@ const Navbar = () => {
           <a href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt" className="alinks">
             <b>Live Availability</b>
           </a>
+          
+          <Link to="request">
+            <a href="#" className="alinks">
+              <b>Request</b>
+            </a>
+          </Link>
+
 
           <Link to="contactus">
             <a href="#" className="alinks">
@@ -30,8 +39,8 @@ const Navbar = () => {
             <b>Community</b>
           </a></Link>
          
-          <Link to="login"><a href="#" className="nav-login">
-            Login
+          <Link to="signup"><a href="#" className="nav-login">
+            SignUp
           </a> </Link>
           
         </div>

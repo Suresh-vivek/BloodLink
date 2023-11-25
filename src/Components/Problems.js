@@ -12,7 +12,7 @@ const Problems = () => {
         </div>
 
         <div className="inner-right">
-            <img src={require("../Assets/Blood1.png")} className="image"/>
+            <img src={require("../Assets/Blood1.png")} className="image12"/>
         </div>
 
 
@@ -21,7 +21,7 @@ const Problems = () => {
 
       <div className="outer-box">
       <div className="inner-left">
-      <img src={require("../Assets/Blood2.png")} className="image"/>
+      <img src={require("../Assets/Blood2.png")} className="image12"/>
       </div>
 
 <div className="inner-right">
@@ -44,7 +44,7 @@ const Problems = () => {
       </div>
 
 <div className="inner-right">
-    <img src={require("../Assets/Blood3.png")} className="image"/>
+    <img src={require("../Assets/Blood3.png")} className="image12"/>
 </div>
 
       </div>
