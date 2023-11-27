@@ -15,6 +15,7 @@ const Map = () => {
 
   useEffect(() => {
     const mapplsClassObject = new mappls();
+    let mappls_circle;
 
     mapplsClassObject.initialize("a66f20fb2b7761fbd30d59ad55ced604", () => {
       const newMapObject = mapplsClassObject.Map({
@@ -27,6 +28,16 @@ const Map = () => {
         // Activities after map load
         // Call the geolocation function here
         fetchUserLocation(newMapObject);
+        mappls_circle = new mapplsClassObject.Circle({
+          map: newMapObject,
+          center: { lat: 28.67, lng: 77.115 },
+          radius: 500,
+          fillColor: "#0000ff",
+          fillOpacity: 0.2,
+          strokeColor: "#0000ff",
+          strokeOpacity: 1,
+          strokeWeight: 1,
+        });
       });
     });
   }, []);
